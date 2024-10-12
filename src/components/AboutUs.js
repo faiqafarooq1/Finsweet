@@ -10,7 +10,7 @@ export default function AboutUs() {
           className="h-auto max-w-full lg:h-[540px] lg:w-auto"
         />
       </div>
-      <div className="lg:absolute z-10 right-8 top-22 h-auto w-full max-w-md p-12 bg-white sm:p-10 lg:w-1/2 lg:max-w-full lg:top-1/4">
+      <div className="lg:absolute z-10 right-8 top-22 lg:h-[480px] w-full pt-10 lg:p-12 bg-white sm:p-10 lg:w-1/2 lg:max-w-full lg:top-1/4">
         <h4 className="text-xs sm:text-sm font-medium text-neutral-500 mb-2 tracking-[3px]">
           WHY WE STARTED
         </h4>
@@ -24,9 +24,11 @@ export default function AboutUs() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip.
         </p>
-        <button className="bg-light-yellow text-neutral-900 font-bold py-2 sm:py-3 px-4 text-xs sm:text-sm lg:text-base rounded w-full sm:w-52 hover:text-white transition duration-300">
+        <div className=" flex items-center ">
+        <button className="bg-light-yellow text-neutral-900 font-bold py-2 sm:py-3 px-4 text-xs sm:text-sm lg:text-base rounded  sm:w-52 hover:text-white transition duration-300">
           Discover our story &gt;
         </button>
+        </div>
       </div>
     </div>
   );

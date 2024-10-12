@@ -9,10 +9,9 @@ const Footer = ({contactRef , aboutRef , scrollToSection, homeRef, blogRef}) => 
   return (
     <footer className="bg-gray-900 text-gray-300 py-10">
       <div className=" flex flex-col gap-y-5 p-5 lg:px-10">
-        <div className="flex flex-col lg:flex-row justify-between lg:items-center">
+        <div className="flex flex-col lg:flex-row justify-between  gap-4 lg:items-center">
           <h1 className="text-[26px]  font-bold text-white">{`{Finsweet`}</h1>
-          <div className="grid grid-cols-2 lg:flex lg:gap-x-8 lg:text-sm">
-            <ul className="flex space-x-6 ">
+            <ul className="grid grid-cols-2 gap-y-3 lg:gap-y-0 lg:flex lg:gap-x-8 lg:text-sm">
               <li
                 onClick={() => scrollToSection(homeRef)}
                 className="cursor-pointer"
@@ -39,7 +38,6 @@ const Footer = ({contactRef , aboutRef , scrollToSection, homeRef, blogRef}) => 
               </li>
             </ul>
           </div>
-        </div>
         <div className="flex flex-col lg:flex-row  items-center gap-y-4 lg:gap-y-0 lg:gap-x-28 p-4 lg:p-10 lg:pl-20  bg-footer">
           <div>
             <h1 className="text-white text-xl lg:text-[36px] font-bold lg:leading-[48px]">
@@ -52,7 +50,7 @@ const Footer = ({contactRef , aboutRef , scrollToSection, homeRef, blogRef}) => 
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="px-4 py-2 text-black bg-transparent border-[1px] border-gray-600"
+                className="px-4 py-2 w-3/4 text-black bg-transparent border-[1px] border-gray-600"
               />
               <button className="bg-light-yellow text-black font-semibold p-2  lg:px-6 py-2 hover:text-white transition duration-300">
                 Subscribe
@@ -60,7 +58,7 @@ const Footer = ({contactRef , aboutRef , scrollToSection, homeRef, blogRef}) => 
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col lg:flex-row gap-4  justify-between lg:items-center">
           <div className="flex flex-col">
             <div className="text-sm">
               <p>Finstreet 118 2561 Fintown</p>

@@ -30,7 +30,7 @@ export default function Info() {
         <div className="w-1/4 h-3 bg-purple-600"></div>
       </div>
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10  lg:px-12 bg-back">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10  px-2 lg:px-12 bg-back">
           <div>
             <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-[3px]">
               About Us
@@ -49,7 +49,7 @@ export default function Info() {
               Read More &gt;
             </button>
           </div>
-          <div>
+          <div className="px-2">
             <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-[3px]">
               Our Mission
             </h2>
@@ -77,7 +77,7 @@ export default function Info() {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="flex flex-col gap-y-4  p-7 hover:bg-light-yellow transition duration-300 bg-white border border-gray-300"
+              className="flex flex-col gap-y-4  rounded-md p-7 hover:bg-light-yellow transition duration-300 bg-white border border-gray-300"
             >
             <div className="flex items-start">
                 <img
